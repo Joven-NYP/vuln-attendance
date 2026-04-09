@@ -79,9 +79,9 @@ vuln_attendance_web  | AH00558: apache2: Could not reliably determine...
 
 | URL | Description |
 |-----|-------------|
-| http://localhost:8080 | Main login page |
-| http://localhost:8080/info.php | Vulnerability 1: phpinfo |
-| http://localhost:8080/upload.php | File upload (RCE) |
+| http://localhost:8080 
+| http://localhost:8080/info.php 
+| http://localhost:8080/upload.php 
 
 ### 4. Demo credentials
 
