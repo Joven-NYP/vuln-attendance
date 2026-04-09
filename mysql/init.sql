@@ -43,7 +43,7 @@ CREATE TABLE attendance (
     FOREIGN KEY (marked_by) REFERENCES users(id)
 );
 
--- Seed: Lecturers (password is MD5 hash - intentionally weak)
+-- Seed: Lecturers 
 INSERT INTO users (username, password, role, full_name) VALUES
 ('dr.smith', MD5('password123'), 'lecturer', 'Dr. John Smith'),
 ('prof.tan', MD5('letmein'), 'lecturer', 'Prof. Alice Tan');
