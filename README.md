@@ -77,10 +77,11 @@ vuln_attendance_web  | AH00558: apache2: Could not reliably determine...
 
 ### 3. Access the application
 
-URL 
-http://localhost:8080 
-http://localhost:8080/info.php 
-http://localhost:8080/upload.php 
+| URL | Description |
+|-----|-------------|
+| http://localhost:8080 | Main application |
+| http://localhost:8080/info.php | Server information |
+| http://localhost:8080/upload.php | File upload |
 
 ### 4. Demo credentials
 
