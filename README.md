@@ -21,27 +21,27 @@ A PHP-based Attendance Management System built with intentional security vulnera
 
 ```
 vuln-attendance/
-├── docker-compose.yml        # Orchestrates web + db containers
-├── Dockerfile                # PHP/Apache image with vuln config
+├── docker-compose.yml        
+├── Dockerfile                
 ├── mysql/
-│   └── init.sql              # DB schema + seed data
-└── src/                      # Web root (/var/www/html)
-    ├── index.php             # Login page
-    ├── dashboard.php         # Home after login
-    ├── attendance.php        # Mark attendance (lecturer only)
-    ├── records.php           # View attendance records
-    ├── upload.php            # CSV import (VULN: RCE)
-    ├── logout.php            # Clear session
-    ├── info.php              # VULN: phpinfo()
-    ├── exploit_cookie.php    # Exploit demo helper page
-    ├── db.php                # DB connection + VULN: weak encryption
-    ├── auth.php              # VULN: cookie-based auth
+│   └── init.sql              
+└── src/                      
+    ├── index.php             
+    ├── dashboard.php         
+    ├── attendance.php        
+    ├── records.php           
+    ├── upload.php            
+    ├── logout.php            
+    ├── info.php              
+    ├── exploit_cookie.php    
+    ├── db.php                
+    ├── auth.php              
     ├── css/
     │   └── style.css
     ├── partials/
     │   ├── header.php
     │   └── sidebar.php
-    └── uploads/              # VULN: PHP-executable upload directory
+    └── uploads/              
 ```
 
 ---
