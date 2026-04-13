@@ -1,8 +1,7 @@
 <?php
 require_once 'db.php';
 
-// VULNERABILITY: Role is stored in a cookie encrypted with weak hardcoded key
-// Attacker can find key via /info.php, then forge cookie with "lecturer" role
+
 
 function setAuthCookie($userId, $role, $username) {
     $cookieData = $userId . '|' . $role . '|' . $username;
