@@ -83,6 +83,16 @@ vuln_attendance_web  | AH00558: apache2: Could not reliably determine...
 | http://localhost:8080/info.php | Server information |
 | http://localhost:8080/upload.php | File upload |
 
+## Challenge
+
+Every vulnerability in this application can be chained together. There are three attacks to perform:
+
+**Information Disclosure:** Inject yourself into the server's diagnostic endpoint to extract sensitive configuration data exposed in the environment.
+
+**Privilege Escalation:** Using what you discovered, forge your own authentication token to gain access to a lecturer account without knowing any credentials.
+
+**Remote Code Execution:** Abuse a file management feature available to lecturers to inject a server-side payload that executes arbitrary commands on the host.
+
 ### 4. Demo credentials
 
 | Username | Password | Role |
