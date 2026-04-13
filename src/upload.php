@@ -1,6 +1,5 @@
 <?php
 require_once 'auth.php';
-// VULNERABILITY: requireLecturer() checks only the forgeable cookie
 $user = requireLecturer();
 
 $success = '';
