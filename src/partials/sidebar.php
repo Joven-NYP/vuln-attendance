@@ -24,9 +24,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
     <div class="sidebar-section" style="margin-top:1rem;">
         <div class="sidebar-label">System</div>
-        <a href="/info.php" class="sidebar-link" target="_blank">
-            <span class="icon">ℹ️</span> Server Info
-        </a>
         <a href="/logout.php" class="sidebar-link">
             <span class="icon">🚪</span> Sign Out
         </a>
